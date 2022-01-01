@@ -1,6 +1,7 @@
-const { check } = require('express-validator')
+const { check } = require('express-validator');
 
 module.exports = [
+    
     check('name')
     .notEmpty()
     .withMessage('Campo requerido'),

@@ -17,6 +17,7 @@ form {
     border: 1px, solid black;
     border-radius: 1rem;
     background-color: cadetblue;
+    padding: 1rem;
 }
 
 form div {
@@ -32,6 +33,6 @@ form div label {
 }
 
 .text-danger {
-    color: tomato
+    color: tomato;
 }
 

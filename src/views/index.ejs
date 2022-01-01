@@ -13,13 +13,13 @@
 
     <% if (locals.userData) { %>
         <section>
-            <p>Hola <%= userData.name %>, elegiste el color <%= userData.color %>, tu email es: <%= userData.email %> <% userData.age !== "" && `y tu edad es ${userData.age}` %>    </p>
+            <p>Hola <%= userData.name %>, elegiste el color <%= userData.color %>, tu email es: <%= userData.email %> <% userData.age !== "" && `y tu edad es ${userData.age}` %></p>
         </section>
     <% } %>
 
-    <form action="" method="post">
+    <form action="/" method="post">
         <div>
-            <label for="name">Ingrese su nombre</label><!-- el for es para que cliqueando el label me posicione en el input -->
+            <label for="name">Ingrese su nombre*</label><!-- el for es para que cliqueando el label me posicione en el input -->
             <input type="text" name="name" id="name">
             <% if (locals.errors && errors.name) { %>
               <small class="text-danger"><%= errors.name.msg %></small>
@@ -33,6 +33,9 @@
                 <option value="green">Verde</option>
                 <option value="yellow">Amarillo</option>
             </select>
+            <% if (locals.errors && errors.color) { %>
+                <small class="text-danger"><%= errors.color.msg %></small>
+            <% } %>
         </div>
         <div>
             <label for="email">Ingrese su email</label>
@@ -44,6 +47,9 @@
         <div>
             <label for="age">Ingrese su edad</label>
             <input type="number" name="age" id="age">
+            <% if (locals.errors && errors.age) { %>
+                <small class="text-danger"><%= errors.age.msg %></small>
+            <% } %>
         </div>  
         <button type="submit">ENVIAR</button>
     </form>

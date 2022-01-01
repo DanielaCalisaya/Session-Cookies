@@ -14,10 +14,8 @@ module.exports = {
             })
         }else{
             res.render('index', {
-                
+                errors: errors.mapped()
             })
-        }
-
-        
+        }  
     } 
 }
