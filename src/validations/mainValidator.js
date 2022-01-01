@@ -19,4 +19,4 @@ module.exports = [
     .isNumeric()
     .withMessage("Sólo números")
 
-]
+] 

@@ -1,6 +1,7 @@
-const { validationResult } = require("express-validator")
+const { validationResult } = require("express-validator");
 
 module.exports = {
+
     main: (req, res) => {
         res.render('index')
     }, 
@@ -18,5 +19,5 @@ module.exports = {
         }
 
         
-    }
+    } 
 }
