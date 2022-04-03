@@ -4,10 +4,15 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
+  /*   background-color: grey; */
 }
 
 .red {
     background-color: red;
+}
+
+.blue {
+    background-color: blue;
 }
 
 form {
@@ -33,6 +38,6 @@ form div label {
 }
 
 .text-danger {
-    color: tomato;
+    color: red;
 }
 

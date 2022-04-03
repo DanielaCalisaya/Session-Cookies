@@ -5,6 +5,7 @@ const mainValidator = require('../validations/mainValidator');
 
 router.get('/', controller.main);
 router.post('/', mainValidator, controller.userData);
+router.get('/profile', controller.view)
 
 
 
